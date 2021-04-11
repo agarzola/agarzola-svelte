@@ -43,6 +43,15 @@
 		text-indent: 0;
 	}
 
+	p:last-of-type:after {
+		content: '✍︎';
+		display: block;
+		margin-top: 1.5rem;
+		font-size: 1.4rem;
+		text-align: center;
+		text-indent: 0;
+	}
+
 	img {
 		display: block;
 		margin: 2rem auto 0;
