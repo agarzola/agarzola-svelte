@@ -19,7 +19,7 @@
 	If you happen to have a good reason to send me an encrypted message, my public key is available on <a rel='external' href='https://keybase.io/alfonso'>Keybase</a>. You can reach out to me using their messaging system or <a rel='external' href='mailto:alfonso@agarzola.com'>email</a> your encrypted message to me like in the olden times.
 	</p>
 	<p>
-	Unencrypted messages are also accepted, though admittedly a little less fun.
+	Unencrypted messages are also acceptable, although admittedly a little less&nbsp;fun.
 	</p>
 </main>
 
