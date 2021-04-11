@@ -1,4 +1,4 @@
-<script>
+<script context='module'>
 	// No client-side JavaScript needed on this page.
 	export const hydrate = false;
 	// This page can be pre-rendered.
