@@ -13,10 +13,10 @@
 	I think I spend too much time online and, strangely, creating a new website seems like a reasonable way of addressing this problem. Truth be told, I’m already regretting&nbsp;it.
 	</p>
 	<p>
-	I might do something useful with this someday. In the meantime, you can find me on <a rel="external" href="https://www.linkedin.com/in/agarzola/">LinkedIn</a>, <a rel="external" href="https://instagram.com/agarzola">Instagram</a>, and —sadly— the absolute pit of despair that is <a rel="external" href="https://twitter.com/agarzola">Twitter</a>. You should follow me on none of&nbsp;these.
+	I might do something useful with this someday. In the meantime, you can find me on <a rel='external' href='https://www.linkedin.com/in/agarzola/'>LinkedIn</a>, <a rel='external' href='https://instagram.com/agarzola'>Instagram</a>, and —sadly— the absolute pit of despair that is <a rel='external' href='https://twitter.com/agarzola'>Twitter</a>. You should follow me on none of&nbsp;these.
 	</p>
 	<p>
-	If you happen to have a good reason to send me an encrypted message, my public key is available on <a rel="external" href="https://keybase.io/alfonso">Keybase</a>. You can reach out to me using their messaging system or <a rel="external" href="mailto:alfonso@agarzola.com">email</a> your encrypted message to me like in the olden times.
+	If you happen to have a good reason to send me an encrypted message, my public key is available on <a rel='external' href='https://keybase.io/alfonso'>Keybase</a>. You can reach out to me using their messaging system or <a rel='external' href='mailto:alfonso@agarzola.com'>email</a> your encrypted message to me like in the olden times.
 	</p>
 	<p>
 	Unencrypted messages are also accepted, though admittedly a little less fun.
