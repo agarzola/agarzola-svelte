@@ -44,9 +44,48 @@ a {
 	transition-property: background-color, color;
 }
 
-a:focus, a:hover {
-	background-color: var(--highlight);
-	color: var(--dark);
-	text-decoration: none;
-	outline: none;
+	a:focus, a:hover {
+		background-color: var(--highlight);
+		color: var(--dark);
+		text-decoration: none;
+		outline: none;
+	}
+
+main {
+	text-align: justify;
+	max-width: 20rem;
+	margin: 0 auto;
+	padding: 0 1rem 1rem;
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: 100;
+}
+
+p {
+	margin-top: 0.5rem;
+	text-indent: 1.4rem;
+}
+	p:first-of-type {
+		margin-top: 2rem;
+		text-indent: 0;
+	}
+	p:last-of-type:after {
+		content: '❡';
+		display: block;
+		margin-top: 1.5rem;
+		font-size: 1.4rem;
+		text-align: center;
+		text-indent: 0;
+	}
+
+img {
+	display: block;
+	margin: 2rem auto 0;
+	width: 100%;
+	height: auto;
+	max-width: 180rem;
+	border-radius: 3px;
+	box-shadow: -8px 8px var(--dark), -10px 10px var(--subtle);
 }
