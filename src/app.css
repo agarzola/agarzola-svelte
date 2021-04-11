@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+	/* COLORS */
+	--black: #000000;
+	--dark: #10151E;
+	--highlight: #ff5741;
+	--light: #cdd8ef;
+	--subtle: #1c2c4f;
+
+	/* TYPOGRAPHY */
+	--font-family-body: 'EB Garamond', serif;
+	--font-size-body: 22px;
+
+	/* MAIN LAYOUT STYLES */
+	font-size: var(--font-size-body);
+}
+
+body {
+	background-color: var(--dark);
+	margin: 0;
+	font-family: var(--font-family-body);
+	line-height: 1.6;
+	color: var(--light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-family-body);
+	line-height: 1.4;
+}
+
+/* Give everything a default top margin. */
+body * {
+	margin-top: 1rem;
+	margin-bottom: 0;
+}
+
+a {
+	padding: 0 0.15rem 0.15rem;
+	font-style: italic;
+	color: var(--highlight);
+	border-radius: 2px;
+	transition-duration: 0.2s;
+	transition-property: background-color, color;
+}
+
+a:focus, a:hover {
+	background-color: var(--highlight);
+	color: var(--dark);
+	text-decoration: none;
+	outline: none;
+}
