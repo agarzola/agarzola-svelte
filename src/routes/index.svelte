@@ -47,7 +47,7 @@
 	}
 
 	p:last-of-type:after {
-		content: '✍︎';
+		content: '❡';
 		display: block;
 		margin-top: 1.5rem;
 		font-size: 1.4rem;
