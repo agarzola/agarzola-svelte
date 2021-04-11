@@ -41,19 +41,19 @@
 		text-indent: 1.4rem;
 	}
 
-	p:first-of-type {
-		margin-top: 2rem;
-		text-indent: 0;
-	}
+		p:first-of-type {
+			margin-top: 2rem;
+			text-indent: 0;
+		}
 
-	p:last-of-type:after {
-		content: '❡';
-		display: block;
-		margin-top: 1.5rem;
-		font-size: 1.4rem;
-		text-align: center;
-		text-indent: 0;
-	}
+		p:last-of-type:after {
+			content: '❡';
+			display: block;
+			margin-top: 1.5rem;
+			font-size: 1.4rem;
+			text-align: center;
+			text-indent: 0;
+		}
 
 	img {
 		display: block;
