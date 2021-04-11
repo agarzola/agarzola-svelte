@@ -10,7 +10,7 @@
 	<h1>Hello. I’m&nbsp;Alfonso.</h1>
 	<img src='/portrait-small.jpg' srcset='/portrait-small.jpg 640w, /portrait-large.jpg 1080w' alt='A black and white photo of me taking a picture of myself with my smartphone on a mirror with an ornate frame. A modern pendant lamp is visible in the top right corner, and the edges of a fiddle leaf fig tree near the lower right corner.' />
 	<p>
-	I think I spend too much time online and, strangely, creating a new website seems like a reasonable way of addressing this problem. Truth be told, I’m already regretting&nbsp;it.
+	I waste too much time on meaningless doom scrolling online and, strangely, creating a new website seems like a reasonable solution to this problem. This minute, at&nbsp;least.
 	</p>
 	<p>
 	I might do something useful with this someday. In the meantime, you can find me on <a rel='external' href='https://www.linkedin.com/in/agarzola/'>LinkedIn</a>, <a rel='external' href='https://instagram.com/agarzola'>Instagram</a>, and —sadly— the absolute pit of despair that is <a rel='external' href='https://twitter.com/agarzola'>Twitter</a>. You should follow me on none of&nbsp;these.
