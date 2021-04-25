@@ -12,8 +12,6 @@
 	/* TYPOGRAPHY */
 	--font-family-body: 'EB Garamond', serif;
 	--font-size-body: 22px;
-
-	/* MAIN LAYOUT STYLES */
 	font-size: var(--font-size-body);
 }
 
@@ -27,6 +25,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: var(--font-family-body);
+	font-weight: normal;
 	line-height: 1.4;
 }
 
@@ -37,27 +36,28 @@ body * {
 }
 
 a {
+	color: inherit;
+	transition-duration: 0.2s;
+	transition-property: background-color, color;
+}
+	a:focus, a:hover {
+		text-decoration: none;
+		color: var(--highlight);
+	}
+
+a.highlighted {
 	padding: 0 0.15rem 0.15rem;
 	font-style: italic;
 	color: var(--highlight);
 	border-radius: 2px;
-	transition-duration: 0.2s;
-	transition-property: background-color, color;
 }
 
-	a:focus, a:hover {
+	a.highlighted:focus, a.highlighted:hover {
 		background-color: var(--highlight);
 		color: var(--dark);
 		text-decoration: none;
 		outline: none;
 	}
-
-main {
-	text-align: justify;
-	max-width: 20rem;
-	margin: 0 auto;
-	padding: 0 1rem 1rem;
-}
 
 h1 {
 	font-size: 2rem;
@@ -66,20 +66,35 @@ h1 {
 
 p {
 	margin-top: 0.5rem;
-	text-indent: 1.4rem;
 }
-	p:first-of-type {
-		margin-top: 2rem;
-		text-indent: 0;
+
+main {
+	text-align: justify;
+	max-width: 20rem;
+	margin: 0 auto;
+	padding: 0 1rem 1rem;
+}
+
+	main p {
+		text-indent: 1.4rem;
 	}
-	p:last-of-type:after {
-		content: '❡';
-		display: block;
-		margin-top: 1.5rem;
-		font-size: 1.4rem;
-		text-align: center;
-		text-indent: 0;
-	}
+		main p:first-of-type,
+		main h1 + p,
+		main h2 + p,
+		main h3 + p,
+		main h4 + p,
+		main h5 + p,
+		main h6 + p {
+			text-indent: 0;
+		}
+		main p:last-of-type:after {
+			content: '❡';
+			display: block;
+			margin-top: 1.5rem;
+			font-size: 1.4rem;
+			text-align: center;
+			text-indent: 0;
+		}
 
 img {
 	display: block;
@@ -89,4 +104,29 @@ img {
 	max-width: 180rem;
 	border-radius: 3px;
 	box-shadow: -8px 8px var(--dark), -10px 10px var(--subtle);
+}
+
+.masthead-notice {
+	box-sizing: border-box;
+	width: calc(100% - 2rem);
+	max-width: 40rem;
+	margin: 1rem auto;
+	padding: 0.6rem;
+	border: 1px dashed var(--dark);
+	background-color: var(--subtle);
+	text-align: center;
+}
+	.masthead-notice p {
+		margin: 0;
+		font-size: 0.8rem;
+	}
+
+.defined-term {
+	cursor: help;
+}
+
+time {
+	font-size: 0.6rem;
+	text-transform: uppercase;
+	color: var(--muted);
 }

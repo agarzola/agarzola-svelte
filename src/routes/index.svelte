@@ -6,6 +6,12 @@
 	export const router = false;
 </script>
 
+<style>
+	main p:first-of-type {
+		margin-top: 2rem;
+	}
+</style>
+
 <main>
 	<h1>Hello. I’m&nbsp;Alfonso.</h1>
 	<img src='/portrait-small.jpg' srcset='/portrait-small.jpg 640w, /portrait-large.jpg 1080w' alt='A black and white photo of me taking a picture of myself with my smartphone on a mirror with an ornate frame. A modern pendant lamp is visible in the top right corner, and the edges of a fiddle leaf fig tree near the lower right corner.' />
