@@ -1,4 +1,10 @@
 <script context='module'>
+	// No client-side JavaScript needed on this page.
+	export const hydrate = false;
+	// This page can be pre-rendered.
+	export const prerender = true;
+	export const router = false;
+
 	import Prismic from '@prismicio/client';
 	const Client = Prismic.client('https://agarzola.cdn.prismic.io/api/v2');
 	import PrismicDom from 'prismic-dom';
