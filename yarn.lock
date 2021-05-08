@@ -977,6 +977,11 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
+to-words@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/to-words/-/to-words-2.3.1.tgz#0f5141b3df2232cf4b0860219c91a2d6d1f5854f"
+  integrity sha512-1dDxop822EI2e7UbXuE4aKmjMVgTclbQrJ7b73sDsbTgQXrRaFtcMH1FG3ZWF2M8gAa28vqnLa1/R10lqdY3eA==
+
 toml@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/toml/-/toml-3.0.0.tgz#342160f1af1904ec9d204d03a5d61222d762c5ee"

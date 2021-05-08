@@ -6,9 +6,14 @@ const config = {
 		adapter: netlify(),
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
+		prerender: {
+			crawl: true,
+			enabled: true,
+			pages: [ '*' ],
+		},
 		vite: {
 			ssr: {
-				noExternal: [ 'luxon' ],
+				noExternal: [ 'luxon', 'to-words' ],
 			},
 		},
 	},

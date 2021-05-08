@@ -5,7 +5,8 @@
 	export const prerender = true;
 	export const router = false;
 
-	import toWords from '$lib/to-words';
+	import { ToWords } from 'to-words';
+	const toWords = new ToWords();
 	import Prismic from '@prismicio/client';
 	const Client = Prismic.client('https://agarzola.cdn.prismic.io/api/v2');
 	import PrismicDom from 'prismic-dom';
