@@ -17,14 +17,8 @@
 </script>
 
 <script>
-	import { DateTime } from 'luxon';
 	export let entries;
-	function entryDateTime(string) {
-		const full = DateTime.fromISO(string);
-		const date = full.toISODate();
-		const time = full.toLocaleString(DateTime.TIME_WITH_SHORT_OFFSET);
-		return { date, time };
-	}
+	import entryDateTime from '$lib/entry-date-time';
 </script>
 
 <style>
