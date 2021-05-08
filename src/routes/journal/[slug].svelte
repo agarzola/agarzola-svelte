@@ -26,6 +26,7 @@
 <script>
 	export let entry, renderedSections;
 	import entryDateTime from '$lib/entry-date-time';
+	import Masthead from '$lib/Masthead.svelte';
 </script>
 
 <style>
@@ -46,9 +47,9 @@
 		}
 </style>
 
-<aside class='masthead-notice'>
+<Masthead>
 	<p>Hello. I’m Alfonso and this is my <a class="highlighted" href="/journal">journal</a>. Want to learn more about me? <a class='highlighted' href="/">Visit&nbsp;my&nbsp;homepage.</a></p>
-</aside>
+</Masthead>
 
 <main>
 	<h1>{@html PrismicDom.RichText.asText(entry.data.title) }</h1>
