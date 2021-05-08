@@ -8,7 +8,7 @@ const config = {
 		target: '#svelte',
 		vite: {
 			ssr: {
-				external: [ 'luxon' ],
+				noExternal: [ 'luxon' ],
 			},
 		},
 	},
