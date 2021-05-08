@@ -13,7 +13,9 @@ module.exports = {
 		target: '#svelte',
 
 		vite: {
-			ssr: { }
+			optimizeDeps: {
+				include: [ 'to-words' ]
+			}
 		}
 	}
 };
