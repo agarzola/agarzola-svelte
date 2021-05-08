@@ -2,3 +2,11 @@
   command = "yarn build"
   publish = "build/"
   functions = "functions/"
+
+[[plugins]]
+# `@prismicio/client` requires `node-fetch`, which attempts to load `encoding`
+# and handles the error if it’s not available. However, when the function is
+# packaged for Netlify, `encoding` is made into a hard requirement (i.e. no
+# error handling if not available). The following line installs `encoding` as a
+# dependency before bundling functions to get around this error.
+package = "encoding"
