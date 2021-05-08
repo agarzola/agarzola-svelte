@@ -1,9 +1,8 @@
 <script context='module'>
-	// No client-side JavaScript needed on this page.
+	// No client-side hydration needed on this page.
 	export const hydrate = false;
 	// This page can be pre-rendered.
 	export const prerender = true;
-	export const router = false;
 
 	import { ToWords } from 'to-words';
 	const toWords = new ToWords();
