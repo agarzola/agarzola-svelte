@@ -13,9 +13,7 @@ module.exports = {
 		target: '#svelte',
 
 		vite: {
-			ssr: {
-				noExternal: Object.keys(pkg.dependencies || {})
-			}
+			ssr: { }
 		}
 	}
 };
