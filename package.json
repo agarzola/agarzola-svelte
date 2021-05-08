@@ -20,7 +20,6 @@
 		"prettier-plugin-svelte": "^2.2.0",
 		"prismic-dom": "^2.2.5",
 		"svelte": "^3.29.0",
-		"to-words": "^2.3.1",
 		"vite": "^2.1.0"
 	},
 	"type": "module",
