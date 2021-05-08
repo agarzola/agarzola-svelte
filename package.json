@@ -23,6 +23,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"encoding": "^0.1.13",
 		"luxon": "^1.26.0"
 	}
 }
