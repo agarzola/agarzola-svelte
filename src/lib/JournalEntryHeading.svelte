@@ -8,6 +8,12 @@
 </script>
 
 <style>
+	time {
+		font-size: 0.6rem;
+		text-transform: uppercase;
+		color: var(--muted);
+	}
+
 	.permalink {
 		font-size: 0.6rem;
 		font-weight: bold;

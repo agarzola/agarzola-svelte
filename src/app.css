@@ -110,12 +110,6 @@ img {
 	cursor: help;
 }
 
-time {
-	font-size: 0.6rem;
-	text-transform: uppercase;
-	color: var(--muted);
-}
-
 .smaller-text {
 	font-size: 0.8rem;
 	margin-top: 0;
