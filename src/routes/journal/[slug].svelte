@@ -25,9 +25,8 @@
 
 <script>
 	export let entry, renderedSections;
-	import entryDateTime from '$lib/entry-date-time';
-	import JournalEntryHeading from '$lib/JournalEntryHeading.svelte';
-	import Masthead from '$lib/Masthead.svelte';
+	import JournalEntryHeading from '$lib/components/JournalEntryHeading.svelte';
+	import Masthead from '$lib/components/Masthead.svelte';
 </script>
 
 <Masthead>
