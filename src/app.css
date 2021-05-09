@@ -22,17 +22,17 @@ body {
 	line-height: 1.6;
 	color: var(--light);
 }
+	/* Give everything a default top margin. */
+	body * {
+		margin-top: 1rem;
+		margin-bottom: 0;
+	}
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: var(--font-family-body);
 	font-weight: normal;
 	line-height: 1.4;
-}
-
-/* Give everything a default top margin. */
-body * {
-	margin-top: 1rem;
-	margin-bottom: 0;
+	text-align: left;
 }
 
 a {
