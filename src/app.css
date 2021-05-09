@@ -106,21 +106,6 @@ img {
 	box-shadow: -8px 8px var(--dark), -10px 10px var(--subtle);
 }
 
-.masthead-notice {
-	box-sizing: border-box;
-	width: calc(100% - 2rem);
-	max-width: 40rem;
-	margin: 1rem auto;
-	padding: 0.6rem;
-	border: 1px dashed var(--dark);
-	background-color: var(--subtle);
-	text-align: center;
-}
-	.masthead-notice p {
-		margin: 0;
-		font-size: 0.8rem;
-	}
-
 .defined-term {
 	cursor: help;
 }
@@ -129,4 +114,9 @@ time {
 	font-size: 0.6rem;
 	text-transform: uppercase;
 	color: var(--muted);
+}
+
+.smaller-text {
+	font-size: 0.8rem;
+	margin-top: 0;
 }
