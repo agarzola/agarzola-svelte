@@ -38,8 +38,7 @@
 		link={ false }
 		permalink={ true }
 		slug={ entry.slugs[0] }
-		timestamp={ entry.last_publication_date }
-		title={ PrismicDom.RichText.asText(entry.data.title) }>
+		timestamp={ entry.last_publication_date }>
 		<h1 slot='title'>{@html PrismicDom.RichText.asText(entry.data.title) }</h1>
 	</JournalEntryHeading>
 
