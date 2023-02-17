@@ -11,7 +11,11 @@
 		if (!entry) return;
 		const renderedSections = entry.data.body.map(slice => {
 			switch (slice.slice_type) {
-				case 'body': return PrismicDom.RichText.asHtml(slice.primary.text);
+				case 'body':
+					return {
+						html: PrismicDom.RichText.asHtml(slice.primary.text),
+						label: slice.slice_label,
+					};
 			}
 		});
 		return {
@@ -45,6 +49,18 @@
 	</JournalEntryHeading>
 
 	{#each renderedSections as section}
-		{@html section}
+		{#if section.label === 'aside'}
+			<aside>
+				{@html section.html}
+			</aside>
+		{:else if section.label === 'blockquote'}
+			<blockquote>
+				{@html section.html}
+			</blockquote>
+		{:else if section.label === 'hr'}
+			<hr>
+		{:else}
+			{@html section.html}
+		{/if}
 	{/each}
 </main>

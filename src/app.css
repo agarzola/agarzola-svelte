@@ -95,6 +95,16 @@ main {
 		main h6 + p {
 			text-indent: 0;
 		}
+	main aside {
+		padding: 0.6rem 1rem;
+		background-color: var(--black);
+		border: 1px dashed var(--muted);
+		font-size: 0.8rem;
+	}
+		main aside p {
+			margin: 0;
+			text-align: left;
+		}
 
 img {
 	display: block;
