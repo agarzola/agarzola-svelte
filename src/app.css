@@ -75,7 +75,14 @@ main {
 	margin: 0 auto;
 	padding: 0 1rem 1rem;
 }
-
+	main:after {
+		content: '❡';
+		display: block;
+		margin-top: 1.5rem;
+		font-size: 1.4rem;
+		text-align: center;
+		text-indent: 0;
+	}
 	main p {
 		text-indent: 1.4rem;
 	}
@@ -86,14 +93,6 @@ main {
 		main h4 + p,
 		main h5 + p,
 		main h6 + p {
-			text-indent: 0;
-		}
-		main p:last-of-type:after {
-			content: '❡';
-			display: block;
-			margin-top: 1.5rem;
-			font-size: 1.4rem;
-			text-align: center;
 			text-indent: 0;
 		}
 
