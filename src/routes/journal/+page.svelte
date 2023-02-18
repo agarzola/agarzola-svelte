@@ -1,12 +1,9 @@
-<script context='module'>
-	// This page can be pre-rendered.
-	export const prerender = true;
-</script>
-
 <script>
 	export let data;
 	import JournalEntryHeading from '$lib/JournalEntryHeading.svelte';
 	import Masthead from '$lib/Masthead.svelte';
+	import { title } from '$lib/store';
+	title.set('Journal Entries by');
 </script>
 
 <Masthead>

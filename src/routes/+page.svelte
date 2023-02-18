@@ -1,13 +1,7 @@
-<script context='module'>
-    // No client-side hydration needed on this page.
-    export const hydrate = false;
-    // This page can be pre-rendered.
-    export const prerender = true;
-
-</script>
-
 <script>
 	export let data;
+	import { title } from '$lib/store';
+	title.clear();
 </script>
 
 <style>
