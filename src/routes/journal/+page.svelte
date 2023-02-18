@@ -5,7 +5,6 @@
 
 <script>
 	export let data;
-	import entryDateTime from '$lib/entry-date-time';
 	import JournalEntryHeading from '$lib/JournalEntryHeading.svelte';
 	import Masthead from '$lib/Masthead.svelte';
 </script>
