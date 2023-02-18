@@ -6,7 +6,7 @@ function createDescription() {
 	return {
 		subscribe,
 		set,
-		clear: () => set('The humble website of Alfonso Gómez-Arzola.'),
+		clear: () => set(''),
 	};
 }
 
@@ -36,7 +36,7 @@ function createTitle() {
 	return {
 		subscribe,
 		set: (value) => set(`${value} Alfonso Gómez-Arzola`),
-		clear: () => set('Alfonso Gómez-Arzola'),
+		clear: () => set('Alfonso’s Home on the Web'),
 	};
 }
 

@@ -15,7 +15,7 @@
 	<meta property="og:description" content="{ $description }" />
 	<meta property="og:image" content="https://agarzola.com/portrait-large.jpg" />
 	<meta property="og:image:secure_url" content="https://agarzola.com/portrait-large.jpg" />
-	<meta property="og:site_name" content="Alfonso Gómez-Arzola" />
+	<meta property="og:site_name" content="agarzola.com" />
 	<meta property="og:title" content="{ $title }" />
 	<meta property="og:type" content="{ $type }" />
 	{#if $type === 'article'}

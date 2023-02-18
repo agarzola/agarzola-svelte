@@ -4,7 +4,7 @@
 	import Masthead from '$lib/Masthead.svelte';
 	import { description, title, type } from '$lib/store';
 	description.set('Non-random thoughts on possibly random topics.');
-	title.set('Journal Entries by');
+	title.set('The Journal of');
 	type.clear();
 </script>
 
