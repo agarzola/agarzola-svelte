@@ -1,6 +1,7 @@
 <script>
 	export let data;
-	import { title } from '$lib/store';
+	import { description, title } from '$lib/store';
+	description.clear();
 	title.clear();
 </script>
 

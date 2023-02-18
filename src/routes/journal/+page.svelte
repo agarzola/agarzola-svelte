@@ -2,7 +2,8 @@
 	export let data;
 	import JournalEntryHeading from '$lib/JournalEntryHeading.svelte';
 	import Masthead from '$lib/Masthead.svelte';
-	import { title } from '$lib/store';
+	import { description, title } from '$lib/store';
+	description.set('Non-random thoughts on possibly random topics.');
 	title.set('Journal Entries by');
 </script>
 
