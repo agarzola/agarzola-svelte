@@ -2,9 +2,12 @@
 	export let data;
 	import JournalEntryHeading from '$lib/JournalEntryHeading.svelte';
 	import Masthead from '$lib/Masthead.svelte';
-	import { description, title } from '$lib/store';
+	import { description, modifiedTime, publishedTime, title, type } from '$lib/store';
+	modifiedTime.set(data.entry.modifiedTime);
+	publishedTime.set(data.entry.publishedTime);
 	description.set(data.entry.summary);
 	title.set(`${data.entry.title}, a post by`);
+	type.set('article');
 </script>
 
 <Masthead>

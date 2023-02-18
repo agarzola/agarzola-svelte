@@ -1,8 +1,9 @@
 <script>
 	export let data;
-	import { description, title } from '$lib/store';
+	import { description, title, type } from '$lib/store';
 	description.clear();
 	title.clear();
+	type.clear();
 </script>
 
 <style>

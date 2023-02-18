@@ -18,6 +18,8 @@ export async function load({ params }) {
 	return {
 		renderedSections,
 		entry: {
+			modifiedTime: entry.last_publication_date,
+			publishedTime: entry.first_publication_date,
 			slug: entry.slugs[0],
 			summary: helpers.asText(entry.data.summary),
 			timestamp: entry.first_publication_date,
