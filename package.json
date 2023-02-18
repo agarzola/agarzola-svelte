@@ -1,31 +1,28 @@
 {
 	"name": "agarzola-svelte",
 	"version": "0.0.1",
+	"private": true,
 	"scripts": {
-		"dev": "svelte-kit dev",
-		"build": "svelte-kit build --verbose",
-		"preview": "svelte-kit preview",
-		"start": "svelte-kit start",
-		"lint": "prettier --check . && eslint --ignore-path .gitignore .",
-		"format": "prettier --write ."
+		"dev": "yarn install && vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@prismicio/client": "^4.0.0",
-		"@sveltejs/adapter-netlify": "next",
-		"@sveltejs/kit": "next",
-		"eslint": "^7.22.0",
-		"eslint-config-prettier": "^8.1.0",
-		"eslint-plugin-svelte3": "^3.1.0",
-		"prettier": "~2.2.1",
-		"prettier-plugin-svelte": "^2.2.0",
-		"prismic-dom": "^2.2.5",
-		"svelte": "^3.29.0",
-		"vite": "^2.1.0"
+		"@prismicio/client": "^6.7.3",
+		"@prismicio/helpers": "^2.3.9",
+		"@sveltejs/adapter-netlify": "^2.0.5",
+		"@sveltejs/kit": "^1.5.0",
+		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"luxon": "^3.2.1",
+		"prettier": "^2.8.0",
+		"prettier-plugin-svelte": "^2.8.1",
+		"svelte": "^3.54.0",
+		"to-words": "^3.4.0",
+		"vite": "^4.0.0"
 	},
-	"type": "module",
-	"dependencies": {
-		"encoding": "^0.1.13",
-		"luxon": "^1.26.0",
-		"to-words": "^2.3.1"
-	}
+	"type": "module"
 }

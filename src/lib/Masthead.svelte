@@ -1,3 +1,3 @@
-<aside class='masthead-notice'>
-	<slot></slot>
+<aside class="masthead-notice">
+	<slot />
 </aside>

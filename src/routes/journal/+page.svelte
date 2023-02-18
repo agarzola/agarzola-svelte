@@ -1,26 +1,10 @@
 <script context='module'>
 	// This page can be pre-rendered.
 	export const prerender = true;
-
-	import Prismic from '@prismicio/client';
-	const Client = Prismic.client('https://agarzola.cdn.prismic.io/api/v2');
-	import PrismicDom from 'prismic-dom';
-
-	export async function load() {
-		const entries = await Client.query(
-			[ Prismic.Predicates.at('document.type', 'journal_entry') ],
-			{ pageSize: 15, page: 1, orderings: '[my.journal_entry.date desc]' }
-		);
-		return {
-			props: {
-				entries,
-			},
-		};
-	}
 </script>
 
 <script>
-	export let entries;
+	export let data;
 	import entryDateTime from '$lib/entry-date-time';
 	import JournalEntryHeading from '$lib/JournalEntryHeading.svelte';
 	import Masthead from '$lib/Masthead.svelte';
@@ -32,14 +16,14 @@
 
 <main>
 	<h1>Journal.</h1>
-	{#each entries.results as entry}
+	{#each data.entries as entry}
 	<div class='journal-entry'>
 		<JournalEntryHeading
 			link={ true }
-			slug={ entry.slugs[0] }
-			timestamp={ entry.last_publication_date }
-			title={ PrismicDom.RichText.asText(entry.data.title) } />
-		{@html PrismicDom.RichText.asHtml(entry.data.summary)}
+			slug={ entry.slug }
+			timestamp={ entry.timestamp }
+			title={ entry.title } />
+		{@html entry.summaryHtml}
 	</div>
 	{/each}
 </main>

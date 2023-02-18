@@ -11,4 +11,3 @@ function entryDateTime(string) {
 	const time = full.toLocaleString(DateTime.TIME_WITH_SHORT_OFFSET);
 	return { date, time };
 }
-

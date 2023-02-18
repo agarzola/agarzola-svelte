@@ -3,7 +3,7 @@
 :root {
 	/* COLORS */
 	--black: #000000;
-	--dark: #10151E;
+	--dark: #10151e;
 	--highlight: #ff5741;
 	--light: #cdd8ef;
 	--muted: #506895;
@@ -23,7 +23,12 @@ body {
 	color: var(--light);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: var(--font-family-body);
 	font-weight: normal;
 	line-height: 1.4;

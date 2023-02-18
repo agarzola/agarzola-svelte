@@ -1,22 +1,17 @@
-import netlify from '@sveltejs/adapter-netlify';
+import adapter from '@sveltejs/adapter-netlify';
 
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
+export default {
 	kit: {
-		adapter: netlify(),
-		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte',
-		prerender: {
-			crawl: true,
-			enabled: true,
-			pages: [ '*' ],
-		},
-		vite: {
-			ssr: {
-				noExternal: [ 'luxon', 'to-words' ],
-			},
-		},
+		// default options are shown
+		adapter: adapter({
+			// If true, will create a Netlify Edge Function rather than using
+			// standard Node-based functions.
+			edge: false,
+
+			// If true, will split your app into multiple functions instead of
+			// creating a single one for the entire app. If `edge` is true, this
+			// option cannot be used.
+			split: false,
+		}),
 	},
 };
-
-export default config;
