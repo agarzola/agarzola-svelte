@@ -4,7 +4,7 @@
 	import Masthead from '$lib/Masthead.svelte';
 	import QuoteHeading from '$lib/QuoteHeading.svelte';
 	import { description, title, type } from '$lib/store';
-	description.set('Non-random thoughts on possibly random topics.');
+	description.set('Non-random thoughts on possibly random topics. Also quotes.');
 	title.set('The Journal of');
 	type.clear();
 </script>
