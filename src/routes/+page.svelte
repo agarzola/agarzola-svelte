@@ -19,7 +19,7 @@
 	This is where I put the things I’m interested in. You should check out <a class='highlighted' href='/journal'>my journal</a>, where I have rambled exactly { data.total_journal_entries } time{ data.total_journal_entries !== 'one' ? 's' : '' } —with varying degrees of eloquence— about something or other.
 	</p>
 	<p>
-	You can also find me on <a class='highlighted' rel='external' href='https://www.linkedin.com/in/agarzola/'>LinkedIn</a>, <a class='highlighted' rel='external' href='https://instagram.com/agarzola'>Instagram</a>, and —sadly— the absolute pit of despair that is <a class='highlighted' rel='external' href='https://twitter.com/agarzola'>Twitter</a>. You should follow me on none of&nbsp;these.
+	You can also find me on <a class='highlighted' rel='external' href='https://www.linkedin.com/in/agarzola/'>LinkedIn</a>, <a class='highlighted' rel='external' href='https://instagram.com/agarzola'>Instagram</a>, and —sadly— the absolute pit of despair that is <a class='highlighted' rel='external' href='https://twitter.com/agarzola'>Twitter</a>. You should follow me on none of&nbsp;these, though you’re welcome to follow me on <a class='highlighted' rel='external me' href='https://mastodon.cloud/@agarzola'>Mastodon</a>.
 	</p>
 	<p>
 	If you happen to have a good reason to send me an encrypted message, my public key is available on <a class='highlighted' rel='external' href='https://keybase.io/alfonso'>Keybase</a>. You can reach out to me using their messaging system or <a class='highlighted' rel='external' href='mailto:alfonso@agarzola.com'>email</a> your encrypted message to me like in the olden times.
