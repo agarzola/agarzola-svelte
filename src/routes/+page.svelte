@@ -22,7 +22,7 @@
 	You can also find me on <a class='highlighted me' rel='external' href='https://www.linkedin.com/in/agarzola/'>LinkedIn</a>, <a class='highlighted' rel='external me' href='https://instagram.com/agarzola'>Instagram</a>, and —sadly— the absolute pit of despair that is <a class='highlighted' rel='external me' href='https://twitter.com/agarzola'>Twitter</a>. You should follow me on none of&nbsp;these, though you’re welcome to follow me on <a class='highlighted' rel='external me' href='https://mastodon.cloud/@agarzola'>Mastodon</a>.
 	</p>
 	<p>
-	If you happen to have a good reason to send me an encrypted message, my public key is available on <a class='highlighted' rel='external' href='https://keybase.io/alfonso'>Keybase</a>. You can reach out to me using their messaging system or <a class='highlighted' rel='external' href='mailto:alfonso@agarzola.com'>email</a> your encrypted message to me like in the olden times.
+	If you happen to have a good reason to send me an encrypted message, my public key is available on <a class='highlighted' rel='external me' href='https://keybase.io/alfonso'>Keybase</a>. You can reach out to me using their messaging system or <a class='highlighted' rel='external' href='mailto:alfonso@agarzola.com'>email</a> your encrypted message to me like in the olden times.
 	</p>
 	<p>
 	Unencrypted messages are also acceptable, although admittedly a little less&nbsp;fun.
