@@ -15,7 +15,7 @@
 		link={link}
 		permalink={permalink}
 		showTime={showTime}
-		slug='/quote/{slug}'
+		slug='quote/{slug}'
 		timestamp={timestamp}
 		title={title} />
 

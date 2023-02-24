@@ -77,7 +77,7 @@
 	</time>
 
 	{#if permalink}
-		<a class='journal-entry-permalink' title='Permanent link to this journal entry' href='{ slug }'>
+		<a class='journal-entry-permalink' title='Permanent link to this journal entry' href='/journal/{ slug }'>
 			#
 		</a>
 	{/if}
