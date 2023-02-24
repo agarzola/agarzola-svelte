@@ -140,8 +140,7 @@ img {
 	cursor: help;
 }
 
-time {
-	font-size: 0.6rem;
-	text-transform: uppercase;
-	color: var(--muted);
+hr {
+	border: 0;
+	border-top: 1px dashed var(--subtle);
 }

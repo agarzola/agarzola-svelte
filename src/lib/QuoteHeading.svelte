@@ -10,11 +10,12 @@
 </script>
 
 <ContentHeading
-		label='entry'
+		label='quote'
 		level={level}
 		link={link}
 		permalink={permalink}
 		showTime={showTime}
-		slug={slug}
+		slug='quote/{slug}'
 		timestamp={timestamp}
 		title={title} />
+

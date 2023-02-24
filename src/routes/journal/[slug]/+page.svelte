@@ -16,12 +16,13 @@
 
 <main>
 	<JournalEntryHeading
+		label='entry'
+		level='h1'
 		link={ false }
 		permalink={ true }
 		slug={ data.entry.slug }
 		timestamp={ data.entry.timestamp }
 		title={ data.entry.title }>
-		<h1 slot='title'>{ data.entry.title }</h1>
 	</JournalEntryHeading>
 
 	{#each data.renderedSections as section}
