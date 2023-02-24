@@ -7,7 +7,7 @@
 </script>
 
 <style>
-	main p:first-of-type {
+	main > p:first-of-type {
 		margin-top: 2rem;
 	}
 </style>
@@ -27,4 +27,8 @@
 	<p>
 	Unencrypted messages are also acceptable, although admittedly a little less&nbsp;fun.
 	</p>
+
+	<aside>
+		<p>You like feeds? I publish an <a href='/feed' class='highlighted'>Atom feed</a> that gets updated with new content and occasional site updates.</p>
+	</aside>
 </main>
