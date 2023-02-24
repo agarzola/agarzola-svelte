@@ -12,7 +12,7 @@ export async function load({ params }) {
 			citation: helpers.asText(entry.data.citation),
 			modifiedTime: entry.last_publication_date,
 			publishedTime: entry.first_publication_date,
-			slug: entry.slugs[0],
+			slug: entry.uid,
 			summary: helpers.asText(entry.data.summary),
 			timestamp: entry.first_publication_date,
 			title: helpers.asText(entry.data.title),
