@@ -33,13 +33,14 @@
 
 <main>
 	<QuoteHeading
-		label='entry'
-		level='h1'
-		link={ false }
-		permalink={ true }
-		slug={ data.entry.slug }
-		timestamp={ data.entry.timestamp }
-		title={ data.entry.title }>
+			label='entry'
+			level='h1'
+			link={false}
+			path={data.entry.path}
+			permalink={true}
+			slug={data.entry.slug}
+			timestamp={data.entry.timestamp}
+			title={data.entry.title}>
 	</QuoteHeading>
 
 	<figure class='quote-container'>

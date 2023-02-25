@@ -21,10 +21,10 @@ export async function load() {
 			direction: 'desc',
 		},
 	});
-	console.log(query.results);
 	return {
 		entries: query.results.map((entry) => {
 			return {
+				path: entry.type === 'quote' ? `/journal/quote/${entry.uid}` : `/journal/${entry.uid}`,
 				slug: entry.uid,
 				summaryHtml: helpers.asHTML(entry.data.summary),
 				timestamp: entry.first_publication_date,

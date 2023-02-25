@@ -11,6 +11,7 @@ export async function load({ params }) {
 			attribution: helpers.asText(entry.data.attribution),
 			citation: helpers.asText(entry.data.citation),
 			modifiedTime: entry.last_publication_date,
+			path: `/journal/quote/${entry.uid}`,
 			publishedTime: entry.first_publication_date,
 			slug: entry.uid,
 			summary: helpers.asText(entry.data.summary),

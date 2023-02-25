@@ -19,6 +19,7 @@ export async function load({ params }) {
 		renderedSections,
 		entry: {
 			modifiedTime: entry.last_publication_date,
+			path: `/journal/${entry.uid}`,
 			publishedTime: entry.first_publication_date,
 			slug: entry.uid,
 			summary: helpers.asText(entry.data.summary),

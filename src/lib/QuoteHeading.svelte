@@ -2,6 +2,7 @@
 	import ContentHeading from '$lib/ContentHeading.svelte';
 	export let level = 'h2';
 	export let link;
+	export let path;
 	export let permalink;
 	export let showTime = false;
 	export let slug;
@@ -13,9 +14,10 @@
 		label='quote'
 		level={level}
 		link={link}
+		path={path}
 		permalink={permalink}
 		showTime={showTime}
-		slug='quote/{slug}'
+		slug={slug}
 		timestamp={timestamp}
 		title={title} />
 

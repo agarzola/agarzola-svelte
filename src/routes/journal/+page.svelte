@@ -28,14 +28,14 @@
 		{#if entry.type === 'journal_entry'}
 			<JournalEntryHeading
 					link={ true }
-					slug={ entry.slug }
+					path={ entry.path }
 					timestamp={ entry.timestamp }
 					title={ entry.title } />
 			{@html entry.summaryHtml}
 		{:else}
 			<QuoteHeading
 					link=true
-					slug={ entry.slug }
+					path={ entry.path }
 					timestamp={ entry.timestamp }
 					title={ entry.title } />
 			{@html entry.summaryHtml}
