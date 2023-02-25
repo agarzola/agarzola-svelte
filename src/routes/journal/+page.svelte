@@ -29,6 +29,7 @@
 			<JournalEntryHeading
 					link={ true }
 					path={ entry.path }
+					showTime={true}
 					timestamp={ entry.timestamp }
 					title={ entry.title } />
 			{@html entry.summaryHtml}
@@ -36,6 +37,7 @@
 			<QuoteHeading
 					link=true
 					path={ entry.path }
+					showTime={true}
 					timestamp={ entry.timestamp }
 					title={ entry.title } />
 			{@html entry.summaryHtml}

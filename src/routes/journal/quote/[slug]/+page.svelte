@@ -38,6 +38,7 @@
 			link={false}
 			path={data.entry.path}
 			permalink={true}
+			showTime={true}
 			slug={data.entry.slug}
 			timestamp={data.entry.timestamp}
 			title={data.entry.title}>
