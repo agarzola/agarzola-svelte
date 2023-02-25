@@ -5,22 +5,17 @@ const client = prismic.createClient('https://agarzola.cdn.prismic.io/api/v2');
 
 export async function load() {
 	const query = await client.get({
-		graphQuery: `
-			{
-				quote {
-					...quoteFields
-				}
-				journal_entry {
-					...journal_entryFields
-				}
-			}
-		`,
-
+		predicates: [
+			prismic.predicate.any('document.type', [
+				'journal_entry', 'quote'
+			]),
+		],
 		orderings: {
 			field: 'document.first_publication_date',
 			direction: 'desc',
 		},
 	});
+
 	return {
 		entries: query.results.map((entry) => {
 			return {
