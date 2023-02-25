@@ -10,16 +10,11 @@ export async function GET() {
 		'Content-Type': 'application/xml',
 	};
 	const query = await client.get({
-		graphQuery: `
-			{
-				quote {
-					...quoteFields
-				}
-				journal_entry {
-					...journal_entryFields
-				}
-			}
-		`,
+		predicates: [
+			prismic.predicate.any('document.type', [
+				'journal_entry', 'quote', 'update'
+			]),
+		],
 
 		orderings: {
 			field: 'document.first_publication_date',
@@ -50,10 +45,14 @@ export async function GET() {
 	query.results.forEach(result => {
 		feed.addItem({
 			date: new Date(result.last_publication_date),
-			description: helpers.asText(result.data.summary),
+			description: result.type === 'update' ?
+				helpers.asHTML(result.data.text) :
+				helpers.asHTML(result.data.summary),
 			id: buildLink(result),
 			link: buildLink(result),
-			title: helpers.asText(result.data.title),
+			title: result.type === 'update' ?
+				`Website Update: ${new Date(result.first_publication_date)}` :
+				helpers.asText(result.data.title),
 		});
 	});
 
