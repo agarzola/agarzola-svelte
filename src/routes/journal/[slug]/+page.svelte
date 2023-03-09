@@ -27,19 +27,5 @@
 			title={data.entry.title}>
 	</JournalEntryHeading>
 
-	{#each data.renderedSections as section}
-		{#if section.label === 'aside'}
-			<aside>
-				{@html section.html}
-			</aside>
-		{:else if section.label === 'blockquote'}
-			<blockquote>
-				{@html section.html}
-			</blockquote>
-		{:else if section.label === 'hr'}
-			<hr />
-		{:else}
-			{@html section.html}
-		{/if}
-	{/each}
+	{@html data.renderedBody}
 </main>

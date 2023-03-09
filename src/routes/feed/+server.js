@@ -43,16 +43,29 @@ export async function GET() {
 	});
 
 	query.results.forEach(result => {
+		let content, title;
+		switch (result.type) {
+			case 'update':
+				content = helpers.asHTML(result.data.text);
+				title = `Website Update: ${new Date(result.first_publication_date)}`;
+				break;
+			case 'quote':
+				content = helpers.asHTML(result.data.quote_text);
+				title = `Quote: ${helpers.asText(result.data.title)}`
+				break;
+			default:
+				content = buildJournalContentBody(result.data.body);
+				title = helpers.asText(result.data.title);
+		}
 		feed.addItem({
+			content,
 			date: new Date(result.last_publication_date),
 			description: result.type === 'update' ?
 				helpers.asHTML(result.data.text) :
 				helpers.asHTML(result.data.summary),
 			id: buildLink(result),
 			link: buildLink(result),
-			title: result.type === 'update' ?
-				`Website Update: ${new Date(result.first_publication_date)}` :
-				helpers.asText(result.data.title),
+			title,
 		});
 	});
 
@@ -81,4 +94,14 @@ function buildLink(result) {
 			break;
 	}
 	return `https://agarzola.com/${segments}${result.uid}`;
+}
+
+function buildJournalContentBody(slices) {
+	return slices
+		.map((slice) => {
+			switch (slice.slice_type) {
+				case 'body':
+					return helpers.asHTML(slice.primary.text);
+			}
+		}).join('');
 }
